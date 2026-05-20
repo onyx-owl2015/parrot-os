@@ -1,9 +1,16 @@
 {
-  "name": "Parrot OS Base",
+  "name": "Parrot OS with Desktop",
   "image": "docker.io/parrotsec/core:latest",
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:1": {
-      "configureZshAsDefaultShell": true
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "version": "latest"
+    }
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Parrot OS Desktop",
+      "onAutoForward": "notify"
     }
   }
 }
