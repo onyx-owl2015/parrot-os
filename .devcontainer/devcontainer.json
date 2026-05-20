@@ -1,0 +1,9 @@
+{
+  "name": "Parrot OS Base",
+  "image": "docker.io/parrotsec/core:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {
+      "configureZshAsDefaultShell": true
+    }
+  }
+}
